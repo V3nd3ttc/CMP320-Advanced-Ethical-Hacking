@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<!DOCTYPE niktoscans SYSTEM "/var/lib/nikto/docs/nikto.dtd">
+<niktoscans>
+<niktoscan hoststest="0" options="-h 10.10.239.111 -output 10.10.239.111/output/outputNikto.xml" version="2.5.0" scanstart="Tue May 30 14:15:52 2023" scanend="Wed Dec 31 19:00:00 1969" scanelapsed=" seconds" nxmlversion="1.2">
+
+<scandetails targetip="10.10.239.111" targethostname="10.10.239.111" targetport="80" targetbanner="Apache/2.4.18 (Ubuntu)" starttime="2023-05-30 14:15:52" sitename="http://10.10.239.111:80/" siteip="http://10.10.239.111:80/" hostheader="10.10.239.111" errors="0" checks="6954">
+
+
+<item id="999957" method="GET">
+<description><![CDATA[/: The anti-clickjacking X-Frame-Options header is not present.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://10.10.239.111:80/]]></namelink>
+<iplink><![CDATA[http://10.10.239.111:80/]]></iplink>
+<references><![CDATA[https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options]]></references>
+</item>
+
+<item id="999103" method="GET">
+<description><![CDATA[/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://10.10.239.111:80/]]></namelink>
+<iplink><![CDATA[http://10.10.239.111:80/]]></iplink>
+<references><![CDATA[https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/]]></references>
+</item>
+
+<item id="600050" method="HEAD">
+<description><![CDATA[Apache/2.4.18 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://10.10.239.111:80/]]></namelink>
+<iplink><![CDATA[http://10.10.239.111:80/]]></iplink>
+<references><![CDATA[]]></references>
+</item>
+
+<item id="999984" method="GET">
+<description><![CDATA[/: Server may leak inodes via ETags, header found with file /, inode: a8, size: 583d315d43a92, mtime: gzip.]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://10.10.239.111:80/]]></namelink>
+<iplink><![CDATA[http://10.10.239.111:80/]]></iplink>
+<references><![CDATA[CVE-2003-1418]]></references>
+</item>
+
+<item id="999990" method="OPTIONS">
+<description><![CDATA[OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, OPTIONS .]]></description>
+<uri><![CDATA[/]]></uri>
+<namelink><![CDATA[http://10.10.239.111:80/]]></namelink>
+<iplink><![CDATA[http://10.10.239.111:80/]]></iplink>
+<references><![CDATA[]]></references>
+</item>
+
+<item id="003584" method="GET">
+<description><![CDATA[/icons/README: Apache default file found.]]></description>
+<uri><![CDATA[/icons/README]]></uri>
+<namelink><![CDATA[http://10.10.239.111:80/icons/README]]></namelink>
+<iplink><![CDATA[http://10.10.239.111:80/icons/README]]></iplink>
+<references><![CDATA[https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/]]></references>
+</item>
+
+<statistics elapsed="263" itemsfound="6" itemstested="6954" endtime="2023-05-30 14:20:15" />
+</scandetails>
+</niktoscan>
+
+
+</niktoscans>

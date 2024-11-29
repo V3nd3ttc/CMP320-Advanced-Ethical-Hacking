@@ -1,0 +1,4 @@
+beautifulsoup4==4.11.2
+python_docx==0.8.11
+Requests==2.31.0
+selenium==4.9.1
